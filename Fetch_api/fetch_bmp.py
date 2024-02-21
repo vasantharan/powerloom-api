@@ -21,7 +21,7 @@ def upload_file():
     if file.filename == '':
         return 'No file selected'
 
-    if file[-4:] != '.bmg'
+    if file[-4:] != '.bmg':
         return 'Selected file was not in .bmg type'
     # If file is successfully received, save it to the UPLOAD_FOLDER
     filename = file.filename
