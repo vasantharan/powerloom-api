@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "/Fetch_api/fetch_bmp.py", "use": "@vercel/python" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/Fetch_api/fetch_bmp.py" }
+    ]
+  }
