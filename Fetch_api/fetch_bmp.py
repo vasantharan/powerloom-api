@@ -21,8 +21,8 @@ def upload_file():
     if file.filename == '':
         return 'No file selected'
 
-    if file[-4:] != '.bmg':
-        return 'Selected file was not in .bmg type'
+    if file.filename[-4:] != '.bmp':
+        return 'Selected file was not in .bmp type'
     # If file is successfully received, save it to the UPLOAD_FOLDER
     filename = file.filename
     file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
